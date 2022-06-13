@@ -1,17 +1,31 @@
 <template>
   <div class="container mx-auto bg-amber-400">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MainHeader />
+    <PresentationComp oriented="left" />
+    <PresentationComp oriented=right />
+    <StatsComp />
+    <TabsComp />
+    <MainFooter />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import MainHeader from '@/components/MainHeader.vue'
+import PresentationComp from '@/components/PresentationComp.vue'
+import StatsComp from '@/components/StatsComp.vue'
+import TabsComp from '@/components/TabsComp.vue'
+import MainFooter from '@/components/MainFooter.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    MainHeader,
+    PresentationComp,
+    StatsComp,
+    TabsComp,
+    MainFooter,
+    
   }
 }
 </script>
